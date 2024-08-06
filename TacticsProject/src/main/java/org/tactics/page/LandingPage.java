@@ -16,12 +16,19 @@ public class LandingPage {
 	
 	@FindBy(id="header-desktop-search-input")
 	private WebElement searchField;
-
 	
+	@FindBy(xpath="//a[text()='Account']")
+	private WebElement accountField;
+	
+	
+	public WebElement getAccountField() {
+		return accountField;
+	}
+
+
 	public WebElement getSearchField() {
 		return searchField;
 	}
-	
 	
 	
 	
